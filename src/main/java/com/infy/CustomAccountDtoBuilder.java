@@ -9,7 +9,6 @@ public class CustomAccountDtoBuilder extends BeanMappingBuilder{
 
 	@Override
 	protected void configure() {
-		
 		mapping(Account.class, CustomerAccount.class)
 		.fields("accNo", "customerAccountNumber")
 		.fields("transferCode", "ifscCode");
